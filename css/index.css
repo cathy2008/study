@@ -1,0 +1,26 @@
+body {
+	background-color: #666666;
+	background-image: url("./img/loginbg_1.jpg");
+	background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-size: cover;
+    background-origin: padding-box;
+}
+
+.total {
+	height: 300px;
+	margin-top: 200px;
+	text-align: center;
+}
+
+.button {
+	position:relative;
+	width:70px;
+	height:25px;
+	top:20px;
+}
+.pwdinfo,.pwderror,.usernameinfo{
+	display:none;
+}
