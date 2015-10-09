@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>登录首页</title>
+ <script src="./jquery-2.0.3.min.js"></script>
+<style>
+body {
+	background-color: #666666;
+	background-image: url("./img/loginbg_1.jpg");
+	background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-size: cover;
+    background-origin: padding-box;
+}
+
+.total {
+	height: 300px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.button {
+	width:70px;
+	height:25px
+}
+</style>
+</head>
+<body>
+	<div class="total">
+		<div>
+			<span> <label>用户名：</label> <input name="username" type="text">
+				<div>
+					<span>账户名不能为空</span>
+				</div>
+			</span> <span> <label>密码：</label> <input name="username"
+				type="password">
+				<div>密码不能为空</div>
+				<div>账号或密码错误</div>
+			</span>
+		</div>
+		<div>
+			<button class="button" type="submit">登录</button>
+			<button class="button" type="reset">重置</button>
+		</div>
+	
+	</div>
+<script src="./index.js"></script>
+</body>
+</html>
