@@ -3,28 +3,43 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>企业文化微信端</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<link rel="stylesheet" href="./css/culture.css" />
+	
+	<script type="text/javascript" src="../common/js/jquery-2.0.3.min.js"></script>
 	<script src="./js/culture.js" ></script>
 </head>
-<body> 
-	<ul>
-		<li><a class="default" href="#">文化理念</a></li>
-		<li><a href="#">文化故事</a></li>
-		<li><a href="#"> 视频集</a></li>
-		<li><a href="#">文化理念</a></li>
-		<li><a href="#">文化故事</a></li>
-		<li><a href="#"> 视频集</a></li>
-		<li><a href="#">文化理念</a></li>
-		<li><a href="#">文化故事</a></li>
-		<li><a href="#"> 视频集</a></li> 
-	</ul>
-
-
-	<!-- <div id="top">
-		<div class="top-content">文化理念</div>
-		<div class="top-content">文化故事</div>
-		<div class="top-content">视频集</div>
-	</div> -->
-	<!-- <div id="middle"></div> -->
+<body>  
+<div id="maxwrap">
+  <div class="container clearfix">
+	<ul class="newsheader">
+		<li><a href="javascript:void(0);"><h2 class="active" data-page="1" data-moduleId="1">文化理念</h2></a></li> 
+		<li><a href="javascript:void(0);"><h2 data-page="1" data-moduleId="2">文化故事</h2></a></li>
+		<li><a href="javascript:void(0);"><h2 data-page="1" data-moduleId="3"> 视频集</h2></a></li>
+	</ul>   
+	 <!-- <div id="middle"></div>  -->
+	 <div class="containwarp clearfix">
+        <!--列表文章页-->
+        <div class="newslist clearfix">
+            <ul class="newsul newul"> 
+            </ul>
+        </div>
+        <!--故事集-->
+        <div class="storylist clearfix" >
+            <ul class="newsul storyul"> 
+            </ul>
+        </div>
+        <!--视频集-->
+        <div class="videolist">
+            <ul class="videoul"> 
+                
+            </ul> 
+        </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

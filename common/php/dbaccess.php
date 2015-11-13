@@ -12,7 +12,7 @@ class DB {
 	protected function connect() {
 		$this->conn = mysql_connect ( $this->severname, 'root', '' ) or die ( print_r ( mysql_error (), true ) );
 		mysql_query ( "set names 'utf8'" ); // 数据库输出编码
-		$selectdb = mysql_select_db ( 'study', $this->conn ); // 打开数据库
+		$selectdb = mysql_select_db ( 'wx', $this->conn ); // 打开数据库
 		if (! $selectdb) {
 			echo mysql_errno ( $this->conn );
 		}
@@ -75,10 +75,10 @@ class DB {
 		$keys = join ( ",", array_keys ( $array ) ); // 获取传过来的键名
 		$vals = "'" . join ( "','", array_values ( $array ) ) . "'"; // 获取传过来的值
 		$sql = "INSERT INTO {$table}({$keys}) VALUES ({$vals})";
-// 		echo $sql;die;
+		  //echo $sql;die;
 		$stmt=mysql_query ( $sql,$this->conn );
 		$res=mysql_affected_rows();
-		if ($res){
+		if ($res>0){
 			return true;
 			
 		}else {
